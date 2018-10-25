@@ -1,4 +1,13 @@
 @page {
-   size: 10cm;
+   size: 1200px;
    margin: 0;
+}
+
+@media print {
+  .hide-on-print {
+    display: none;
+  }
+  .row {
+    page-break-inside: avoid;
+  }
 }

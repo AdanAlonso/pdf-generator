@@ -1,2 +1,64 @@
-%h1 Hello Rails!
-= link_to 'Generate', generate_path(format: 'pdf'), class: 'btn'
+.row
+  %h1 Hello Rails!
+.fixed-action-btn
+  = link_to 'Generate PDF!', generate_path(format: 'pdf'), class: 'btn-large pulse hide-on-print'
+.row
+  %nav
+    .nav-wrapper
+      .col.s12
+        %a.breadcrumb Level 1
+        %a.breadcrumb Level 2
+        %a.breadcrumb Level 3
+.row
+  .btn.blue
+    This button does nothing
+  .btn.blue.disabled
+    This button is disabled
+  .btn-large.orange.z-depth-3
+    This button does nothing
+.row
+  .col.s3
+    .section
+      .card
+        .card-image
+          = image_tag 'summer_wars.jpg'
+          %a.btn-floating.btn-large.halfway-fab.black
+            %i.material-icons.activator
+              info
+        .card-content
+          %span.card-title
+            Summer Wars
+          %p
+            Kenji Koiso is a young student at Kuonji High School with a gift for mathematics...
+        .card-reveal
+          %span.card-title
+            King Kazma
+            %i.material-icons.right
+              close
+          %p
+            Love Machine defeats Kazuma's avatar King Kazma and continues to consume accounts in the OZ mainframe, creating catastrophic traffic congestion and disabling electrical devices. Two of Sakae's relatives, Rika and Shota Jinnouchi, discover Kenji's involvement. Shota arrests Kenji, but the congestion causes Natsuki to return them to the estate.
+    .divider
+    .section
+      .collection
+        %a.collection-item
+          Item 1
+          %span.badge
+            14
+        %a.collection-item
+          Item 1
+          %span.badge.new.red
+            3
+  .col.s9
+    .section
+      .col
+        %p
+          %blockquote
+            Kenji Koiso is a young student at Kuonji High School with a gift for mathematics and a part-time moderator in the massive computer-simulated virtual reality world OZ along with his friend Takashi Sakuma.
+      .col
+        %p
+          One day, Kenji is invited by fellow Kuonji student Natsuki Shinohara to participate in her great-grandmother Sakae Jinnouchi's 90th birthday. After traveling to Sakae's estate in Ueda, Natsuki introduces Kenji as her fiancé to Sakae, surprising them both. Kenji meets several of Natsuki's relatives and discovers that the Jinnouchis are descendants of a samurai (vassal of the Takeda clan) who challenged the Tokugawa clan in 1615. He also meets Wabisuke Jinnouchi, Natsuki's half-great-uncle and a computer expert who has been living in the United States since stealing the family fortune 10 years ago.
+      .col.s9
+        %p
+          Kenji receives an e-mail with a mathematical code and cracks it. Love Machine, an artificial intelligence written by Wabisuke, uses Kenji's account and avatar to hack the infrastructure, causing widespread damage. Kenji, Sakuma, and Natsuki's cousin Kazuma Ikezawa confront Love Machine. Love Machine defeats Kazuma's avatar King Kazma and continues to consume accounts in the OZ mainframe, creating catastrophic traffic congestion and disabling electrical devices. Two of Sakae's relatives, Rika and Shota Jinnouchi, discover Kenji's involvement. Shota arrests Kenji, but the congestion causes Natsuki to return them to the estate.
+      .col.s3
+        %p= image_tag 'king_kazma.jpg', class: 'responsive-img hoverable circle'
